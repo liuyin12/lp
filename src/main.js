@@ -11,9 +11,10 @@ import router from '@/router'
 // Vue.prototype.$http = axios
 import axios from 'axios'
 Vue.prototype.$http = axios
-Vue.config.productionTip = false
+
 // 注册到vue实例
 Vue.use(ElementUI)
+Vue.config.productionTip = false
 new Vue({
   router,
   render: h => h(App)

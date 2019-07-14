@@ -37,7 +37,7 @@ export default {
     return {
       // 表单数据对象
       loginForm: {
-        mobile: '13911111111',
+        mobile: '17613634385',
         code: '246810'
       },
       // 表单验证规则对象
@@ -59,11 +59,7 @@ export default {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
           // 提交登录请求  axios是基于primise封装的 post() 返回值一个promise对象
-          this.$http
-            .post(
-              'authorizations',
-              this.loginForm
-            )
+          this.$http.post('http://ttapi.research.itcast.cn/mp/v1_0/authorizations', this.loginForm)
             .then(res => {
               // res 是 响应对象  包含 后台返回的数据 res.data
               // console.log(res.data) 去做什么事情？？？
