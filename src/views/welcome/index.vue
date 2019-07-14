@@ -12,6 +12,6 @@ export default {
 
 <style scoped lang='less'>
 .container{
-    text-align: center;
+    text-align: center
 }
 </style>
